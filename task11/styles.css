@@ -1,0 +1,67 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the header and navigation */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Ensure the nav stays on top of other content */
+  }
+  
+  #main-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #main-nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  #main-nav ul li {
+    margin: 0 15px;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #main-nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Active link style */
+  #main-nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Page content styling */
+  .content {
+    margin-top: 70px; /* Ensure content isn't hidden under the fixed nav */
+    padding: 20px;
+  }
+  
+  section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  
